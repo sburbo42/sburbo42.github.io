@@ -256,7 +256,10 @@ li {
 /* || for Misc. Projects page */
 @media screen and (max-width: 400px) {
     .figma iframe{
-        display: none;
+        width: 100%;
+        height: 500px;
+        margin: 0 auto;
+        display: block;
     }
 }
 
