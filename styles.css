@@ -253,46 +253,102 @@ li {
     margin: 0;
 }
 
+/* || for Misc. Projects page */
+@media screen and (max-width: 400px) {
+    .figma iframe{
+        width: 100%;
+        height: 500px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .figma iframe {
+        width: 80%;
+        height: 600px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px){
+    .figma iframe {
+        width: 80%;
+        height: 800px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .figma iframe {
+        width: 50%;
+        height: 700px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .figma iframe {
+        width: 30%;
+        height: 550px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
 /* || for About page */
-.avatar {
-    width: 150px;
-    vertical-align: bottom;
+
+@media screen and (max-width: 600px) {
+    .card {
+        display: none;
+    }
 }
 
-.avatar-hover {
-    width: 150px;
-    display: none;
-}
-
-.figure:hover .avatar {
-    display: none;
-}
-
-.figure:hover .avatar-hover {
-    display: block;
-}
-
-.figure {
-    border-style: solid;
-    border-width: 3px;
-    border-image: linear-gradient(45deg, DarkViolet, DeepPink) 1;
-    border-radius: 10px;
-    transition: background-image 0.3s ease-in-out;
-}
-
-.card {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    width: 400px;
-    margin: 0px auto;
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    color: #ddcfff;
-    border: none;
-    box-shadow: #5b90bd 6px 6px 0 0;
-    background: #96cefe;
-    border-radius: 15px;
+@media screen and (min-width: 600px){
+    .avatar {
+        width: 150px;
+        vertical-align: bottom;
+    }
+    
+    .avatar-hover {
+        width: 150px;
+        display: none;
+    }
+    
+    .figure:hover .avatar {
+        display: none;
+    }
+    
+    .figure:hover .avatar-hover {
+        display: block;
+    }
+    
+    .figure {
+        border-style: solid;
+        border-width: 3px;
+        border-image: linear-gradient(45deg, DarkViolet, DeepPink) 1;
+        border-radius: 10px;
+        transition: background-image 0.3s ease-in-out;
+    }
+    
+    .card {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        width: 400px;
+        margin: 0px auto;
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        color: #ddcfff;
+        border: none;
+        box-shadow: #5b90bd 6px 6px 0 0;
+        background: #96cefe;
+        border-radius: 15px;
+    }
+    
 }
 
 .animated {
