@@ -372,3 +372,7 @@ li {
 .animated-rev:hover {
     background-position: -100%;
 }
+
+.hidden {
+    display: none;
+}
