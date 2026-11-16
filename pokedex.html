@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokédex Team Builder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header id="top">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">Summer Burbo</a>
+          <ul class="nav-links">
+            <li><a href="about.html" class="nav-btn">About</a></li>
+            <li><a href="projects.html" class="nav-btn">Projects</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="about" class="about">
+      <div class="container">
+        <div class="post">
+          <h2>Pokédex Team Builder</h2>
+          <div class="divider-align">
+            <img
+              src="images/divider-2.webp"
+              class="divider"
+              alt="Dark blue star and circle divider between content"
+            />
+          </div>
+          <br /><br />
+          <p>
+            The Pokédex Team Builder is a JavaScript app that pulls live data
+            from the PokéAPI. Search for any Pokémon to see its image, type, and
+            base stats, then build a team of up to six. Your team is saved in
+            the browser, so it's still there the next time you visit.
+          </p>
+
+          <p>
+            I built this project to practice working with APIs, handling data,
+            and using Git branches for each new feature. See it in action below:
+          </p>
+
+          <h3>TRY IT OUT</h3>
+          <iframe
+            id="pokedex-frame"
+            style="width: 100%; background-color: white; border-radius: 12px"
+            scrolling="no"
+            title="Pokédex Team Builder - Burbo"
+            src="https://sburbo42.github.io/pokedex-team-builder/"
+            frameborder="no"
+          >
+          </iframe>
+          <p>
+            Open the live site
+            <a
+              href="https://sburbo42.github.io/pokedex-team-builder/"
+              target="_blank"
+              rel="noopener"
+              >here</a
+            >, or view the code on
+            <a
+              href="https://github.com/sburbo42/pokedex-team-builder"
+              target="_blank"
+              rel="noopener"
+              >GitHub</a
+            >.
+          </p>
+
+          <h3>BUILT WITH</h3>
+          <p>
+            HTML, CSS (Flexbox), JavaScript (Fetch API, async/await,
+            localStorage), and the PokéAPI
+          </p>
+
+          <h3>WHAT I LEARNED</h3>
+          <ul>
+            <li>
+              How to request data from an API with fetch, and why async and
+              await are needed when waiting on a response from the internet.
+            </li>
+            <li>
+              Handling errors by checking response.ok and using return to stop a
+              function early.
+            </li>
+            <li>
+              Saving and loading data with localStorage, and converting it with
+              JSON.stringify and JSON.parse.
+            </li>
+            <li>
+              Working with Git branches for each new feature, then merging them
+              into main.
+            </li>
+            <li>Deploying a site with GitHub Pages.</li>
+          </ul>
+
+          <br /><br />
+
+          <!-- Optional: your other project pages end with a quote. Add one here or delete this section. -->
+          <section class="quote">
+            <p>
+              On my business card, I am a corporate president. In my mind, I am
+              a game developer. But in my heart, I am a gamer.
+            </p>
+            <p class="quote-author">Satoru Iwata</p>
+          </section>
+        </div>
+      </div>
+    </section>
+    <footer id="contact" class="footer">
+      <div class="container">
+        <img
+          src="images/divider.png"
+          class="divider"
+          alt="Blue to purple squiggle with multicolored stars divider between content"
+        />
+        <div class="social-links">
+          <a href="https://github.com/sburbo42">GitHub</a>
+          <a href="https://www.linkedin.com/in/sburbo">LinkedIn</a>
+          <a href="https://codepen.io/Summer-Burbo">CodePen</a>
+          <h5>Summer Burbo, November 2026</h5>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const frame = document.getElementById("pokedex-frame");
+
+      frame.addEventListener("load", () => {
+        const pokedexPage = frame.contentDocument.body;
+
+        const resize = () => {
+          frame.style.height = pokedexPage.scrollHeight + "px";
+        };
+
+        resize();
+        new ResizeObserver(resize).observe(pokedexPage);
+      });
+    </script>
+  </body>
+</html>
